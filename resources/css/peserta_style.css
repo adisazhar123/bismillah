@@ -1,0 +1,38 @@
+
+.collapse.navbar-collapse.navbar-alt .navbar-nav a:hover{
+  background-color: #ffac35;
+  color: white;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-dark a{
+  color:white;
+}
+.navbar{
+  border-bottom: solid;
+  border-bottom-color: white;
+}
+
+body{
+  background-image: url("../img/bg-nlc.png");
+  background-size: 100%;
+}
+
+.area-ujian, .area-welcome{
+  margin-top: 20px;
+}
+
+.aturan{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a8f8ff;
+  border-radius: 5px;
+  color: #093a7c;
+  background-color: #a8f8ff;
+  padding: 10px;
+}
+
+.persetujuan{
+  font-size: 22px;
+}
+
+.card{
+}
