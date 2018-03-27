@@ -3,7 +3,7 @@
   background-color: #ffac35;
   color: white;
 }
-.navbar.navbar-expand-lg.navbar-dark.bg-dark a{
+.navbar.navbar-expand-lg.navbar-dark.bg-primary a{
   color:white;
 }
 .navbar{
@@ -12,11 +12,18 @@
 }
 
 body{
-  background-image: url("../img/bg-nlc.png");
-  background-size: 100%;
+
+
+  background: url("../img/bg-nlc.png") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-size: 100% 100%;
+
 }
 
-.area-ujian, .area-welcome{
+.content{
   margin-top: 20px;
 }
 
@@ -34,5 +41,8 @@ body{
   font-size: 22px;
 }
 
-.card{
+.table td{
+  margin: 2px;
+  background-color: white;
+  color: black;
 }

@@ -34,4 +34,16 @@ class Peserta extends CI_Controller {
 		$this->load->view('peserta/welcome_peserta');
 	}
 
+	public function loadUjianPeserta(){
+		$this->load->view('peserta/ujian');
+	}
+	public function login(){
+		$this->load->view('peserta/login');
+	}
+
+	public function register(){
+		$this->load->view('peserta/register');
+
+	}
+
 }

@@ -21,7 +21,7 @@
   </button>
   <div class="collapse navbar-collapse navbar-alt" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" >Selamat Datang Tim ... <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" >Selamat Datang Tim ... <span class="sr-only">(current)</span></a>
 
     </div>
 

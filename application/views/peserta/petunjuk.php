@@ -15,7 +15,7 @@
           </div>
         </div>
           <div class="persetujuan">
-            <input type="checkbox" name="" value=""> Saya telah membaca dan memahami petunjuk mengerjakan dengan cermat dan teliti
+            <input type="checkbox" class="agree" name="" value=""> Saya telah membaca dan memahami petunjuk mengerjakan dengan cermat dan teliti
           </div>
           <div class="mulai" style="float: right">
             <br>
