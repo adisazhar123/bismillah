@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Peserta extends CI_Controller {
+class Participants extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,6 +18,13 @@ class Peserta extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	 public function __construct()
+{
+		parent::__construct();
+		$GLOBALS['a'] = "a";
+
+}
+
 	public function index()
 	{
 		$this->load->view('template/header');
@@ -35,7 +42,10 @@ class Peserta extends CI_Controller {
 	}
 
 	public function loadUjianPeserta(){
-		$this->load->view('peserta/ujian');
+		//if ($GLOBALS['a']==="a")
+			//need session checker to check if logged in or not, baru bisa load ujian
+			// add a private property or use session
+			$this->load->view('peserta/ujian');
 	}
 	public function login(){
 		$this->load->view('peserta/login');

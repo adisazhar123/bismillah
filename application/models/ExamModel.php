@@ -1,10 +1,17 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class UserModel extends CI_Model
+class ExamModel extends CI_Model
 {
-  public function register($data){
-    return $this->db->insert('team', $data);
+
+  public function getQuestions(){
+    $this->db->select("question, opt_1, opt_2, opt_3, opt_4, opt_5");
+    $this->db->from("question");
+    $query = $this->db->get();
+
+    if ($query->num_rows() > 0) return $query->result();
+    else return false;
+
   }
 
   public function verifyLogin(){
@@ -20,5 +27,9 @@ class UserModel extends CI_Model
       return $query->result();
     }
     else return false;
+  }
+
+  public function submitAnswers(){
+    
   }
 }

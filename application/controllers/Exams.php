@@ -1,28 +1,24 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Users extends CI_Controller
+class Exams extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('UserModel');
+        $this->load->model('ExamModel');
     }
-    public function register()
-    {
-        $data=array(
-          'email_address'=> $this->input->post('email_address'),
-          'team_name' => $this->input->post('nama_tim'),
-          'password' => password_hash($this->input->post('tim_password'), PASSWORD_BCRYPT)
-    );
 
-        if ($this->UserModel->register($data)) {
-            $response['success']='1';
-            echo json_encode($response);
-        } else {
-            $response['success']='0';
-            echo json_encode($response);
-        }
+    public function getQuestions()
+    {
+        $results = $this->ExamModel->getQuestions();
+        //print_r($results);
+
+        echo json_encode($results);
+    }
+
+    public function submitAnswers(){
+      
     }
 
     public function verifyLogin()
